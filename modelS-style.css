@@ -1,0 +1,215 @@
+body{
+ font-family: 'Lato', sans-serif;
+}
+
+p{
+	margin-bottom:  0 !important;
+}
+
+/*Style navbar*/
+#mainNavbar .nav-link{
+	color: white;
+	transition: linear .2s;
+}
+#mainNavbar .nav-link:hover{
+	color: #D51C1C;
+}
+
+.navbar{
+	background-color: rgb(52,58,64);
+}
+
+
+/*Header*/
+#myvideo{
+	 width: 100%;
+	 height: 100%;
+}
+
+@media (max-width: 500px) {  
+  .tesla-title{
+  	font-size: 1rem !important;
+  	} 
+}
+
+header{
+	background-color: rgb(52,58,64);
+}
+
+header video{
+	position: relative;
+}
+
+.tesla-header{
+	position: absolute;
+	top: 8%;
+	z-index: 1;
+
+}
+
+.tesla-title{
+	font-size: 3rem;
+	color: #B71C1C;
+	background-color: #B71C1C ; /*logo red */
+	font-weight: 600;
+
+
+
+	background-color: #343A40;
+	padding: 8px  100px;
+
+	border-right: 6px solid #B71C1C; /*logo red */
+	border-left: 6px solid #B71C1C; /*logo red */
+
+}
+
+/*Banner*/
+#mS-banner{
+	background-color: rgb(52,58,64)	;
+	padding: 150px 0 !important;
+}
+
+@media (max-width: 575px) {  
+  .mS-banner{
+  		padding-bottom: 70px;
+	}
+}
+
+.jumbotron .fas{
+	font-size: 6rem;
+	color: #B71C1C;
+
+
+}
+.banner-item-value{
+	margin-left: 40px;
+	color: #FFFAFA;
+	opacity: 0.9;
+}
+.banner-item-value p{
+	font-size: 2rem;
+}
+.banner-item-value span{
+	font-size: 1.5rem;
+}
+
+
+/*Main Banner*/
+.main-banner{
+	background-image: url("https://elmob.ua/wp-content/uploads/2017/03/123.jpg"); 
+	background-position: center;
+	background-repeat: no-repeat;  
+	height: 590px;
+	position: relative;
+
+	color: #F5F5F5;
+	opacity: 0.9;
+}
+
+ .main-banner-content{
+ 	position: absolute;
+ 	bottom: 30px;
+ 	left: 0px;
+ 	z-index: 1;
+ }
+
+ 
+
+ .main-banner .fas{
+ 	font-size: 4rem;
+ }
+
+ .main-banner p{
+ 	display: flex;
+ 	align-items: center;
+
+ 	padding-left: 40px;
+
+ 	font-size: 1.5rem;
+
+ 	border-right: 2px solid white;
+ 	padding-right:  50px;
+ }
+
+ @media (max-width: 670px) {  
+  .main-banner-content{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+
+
+
+  	} 
+}
+
+@media (max-width: 670px) {  
+  .main-banner{
+ border-right: hidden;
+
+
+
+  	}  
+}
+
+@media (max-width: 670px) {  
+  .main-banner p{
+  	display: flex;
+  	align-items: center;
+
+  	 border-right: none;
+  	} 
+}
+@media (max-width: 670px) {  
+  .main-banner .fas{
+  	display: flex;
+  	align-items: center;
+
+  	} 
+}
+
+/*Purchase*/
+
+.purchase-page{
+	background-color: #343A40;
+}
+
+.card-text{
+	padding: 10px 0;
+	font-size: 1.1rem;
+}
+
+.card-title{
+	border-bottom: 2px solid #B71C1C;
+	padding-bottom: 20px;
+	font-weight: 700;
+}
+
+
+.card{
+	border: 3px solid #B71C1C;
+	
+}
+
+
+
+.purchase-page .btn{
+	margin-top: 20px;
+
+
+  -webkit-border-radius: 23;
+  -moz-border-radius: 23;
+  border-radius: 23px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: #B71C1C;
+  padding: 8px 60px 8px 60px;
+  text-decoration: none;
+}
+
+
+.purchase-page .btn:hover{
+	background: #343A40;
+	color: red;
+	cursor: pointer;
+}

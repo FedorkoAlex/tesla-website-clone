@@ -1,0 +1,173 @@
+/* FONTS  */
+
+body{
+ font-family: 'Lato', sans-serif;
+;
+
+}
+
+
+
+@media (max-width: 992px) {  
+  .jumbotron .content h2#header-title{
+  	font-size:3rem;
+  	} /*1rem = 16px*/
+}
+ .mt-5 {
+  margin-top: 80px !important;
+}
+/*Style navbar*/
+#mainNavbar .nav-link{
+	color: white;
+	transition: linear .2s;
+}
+#mainNavbar .nav-link:hover{
+	color: #D51C1C;
+}
+
+.navbar.scrolled {
+	background-color: rgb(52,58,64);
+	transition: background 500ms;
+}
+
+/*header*/
+
+#headingTitle .title{
+	color: #0048BA;
+}
+
+ #header-title{
+	font-size: 5rem;
+	font-weight: 500;
+}
+/*About*/
+
+/*@media(max-width: 1050px){
+	 .jumbotron .content h2{
+
+		font-size: 1rem;
+	}*/
+
+.big-banner{
+	background: url("images/header1.jpg") ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+.content h2{
+	font-size: 3.6rem;
+}
+
+
+.content .btn{
+	margin-top: 10px;
+	font-size: 1.5rem;
+}
+
+/*@media(max-width: 1050px){
+	#headingTitle p{
+
+		font-size: 1rem;
+	}
+*/
+/*Choose your tesla*/
+#ad{
+	background-image: url(images/section4.jpg);
+	font-size:100px; 
+	background-position: center;
+	height: 400px;
+}
+
+
+.jumbotron #blurb{
+	color:/*#DBE1E3*/ #B71C1C ; /*logo red */
+	font-weight: 600;
+	font-size: 3rem;
+
+
+	background-color: #343A40;
+	padding: 8px  60px;
+
+	border-right: 6px solid #B71C1C; /*logo red */
+	border-left: 6px solid #B71C1C; /*logo red */
+
+}
+
+@media (max-width: 992px) {  
+  .jumbotron #blurb{
+  	font-size:2rem;
+  	} 
+}
+
+
+
+.jumbotron #year {
+	color: #000000;
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+/*Slider*/
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+	height: 50px;
+	width: 50px;
+}
+
+.slider{
+	background-color: #F0F8FF;
+}
+
+/*In 2021*/
+
+.wall{
+	width: 40%;
+	background-color: #B71C1C ; /*logo red */
+	font-weight: 600;
+
+
+
+	background-color: #343A40;
+	padding: 8px  60px;
+
+	border-right: 6px solid #B71C1C; /*logo red */
+	border-left: 6px solid #B71C1C; /*logo red */
+
+	
+	}
+
+	.banner{
+		background-color: #F0F8FF;
+	}
+
+#year{
+	color: #B71C1C;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+@media (max-width: 992px) {  
+  #year{
+  	font-size:2rem;
+  	} /*1rem = 16px*/
+}
+/*==============================*/
+
+
+
+#headingTitle .title{
+	color: #0048BA;
+}
+
+@media (max-width: 544px) {  
+  .navbar-light .navbar-nav .nav-link{
+  	font-size:0.6rem;
+  	} 
+}
+
+.cars2021, #footer{
+	background-color: #F0F8FF;
+}

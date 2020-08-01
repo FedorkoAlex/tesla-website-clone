@@ -167,12 +167,15 @@ body{
 	   color: #0048BA;
    }
    
-   @media (max-width: 544px) {  
-	 .navbar-light .navbar-nav .nav-link{
-		 font-size:0.6rem;
-		 } 
-   }
-   
-   .cars2021, #footer{
-	   background-color: #F0F8FF;
-   }
+   .website-info p{
+	margin: 0;
+	line-height: normal;
+	color: black;	
+	opacity: 0.8;
+}
+
+@media (max-width: 544px) {  
+	.website-info p{
+		font-size:0.6rem;
+		} 
+  }

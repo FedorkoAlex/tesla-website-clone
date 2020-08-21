@@ -32,48 +32,148 @@ body{
    
    /*header*/
    
-   #headingTitle .title{
-	   color: #0048BA;
-   }
-   
-	#header-title{
-	   font-size: 5rem;
-	   font-weight: 500;
-   }
-   /*About*/
-   
-   /*@media(max-width: 1050px){
-		.jumbotron .content h2{
-   
-		   font-size: 1rem;
-	   }*/
-   
-   .big-banner{
-	   background: url("images/header1.jpg") ;
-	   background-position: center;
-	   background-repeat: no-repeat;
-	   background-size: cover;
-   
-   
-   }
-   
-   .content h2{
-	   font-size: 3.6rem;
-   }
-   
-   
-   .content .btn{
-	   margin-top: 10px;
-	   font-size: 1.5rem;
-   }
-   
-   /*@media(max-width: 1050px){
-	   #headingTitle p{
-   
-		   font-size: 1rem;
-	   }
-   */
+  /*Under construction */
+
+.big-banner{
+
+	height: 100vh;
+	background: url("images/header1.jpg") ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.content{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.header-title{
+	font-size: 4.9rem;
+	font-weight: 500;
+	display: block;
+	
+	animation-name: moveInLeft ;
+  	animation-duration: 1.3s;
+  	animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+	0%{
+	  opacity: 0;
+	  transform: translateX(-90px);  /* this moves the content to the left */
+	}
+  
+	80%{
+	  transform: translateX(10px);
+	}
+  
+	100%{
+	  opacity: 1;
+	  transform: translate(0);
+	}
+  } 
+	  
+  
+  .btn-grey{
+	margin-top: 20px;
+	background-color: #485159 ;
+	color: #fff;
+	font-size: 1rem;
+
+  }
+
+	.btn:link,
+	.btn:visited{
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 30px;
+		border-radius: 100px;
+		display: inline-block;
+		transition: all .2s;
+  		position: relative;  /*This is a reference to the btn::after*/
+
+
+	}
+
+	 .btn:hover{
+		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+		color: #fff;
+		
+	}
+
+	.btn:active{
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+		
+	} 
+
+
+	.btn::after{
+		/* !!!COntent must be specified, even with empty strind, otherwise it won't work !! Display the same*/
+		content: "" ;
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1; 
+		transition: all .4s;
+		
+	  }
+
+	  .btn-grey::after{
+		background-color: #485159;
+	  }
+
+	  .btn:hover::after{
+		  transform: scaleX(1.4) scaleY(1.6);
+		  opacity: 0;
+	  }
+
+	 @keyframes moveInBottom {
+		0%{
+		  opacity: 0;
+		  transform: translateY(30px);  
+		}
+		100%{
+	  
+		  opacity: 1;
+		  transform: translate(0);
+		}
+	  }  
+
+	  .btn-animated{ 
+		animation: moveInBottom .5s ease-out .75s;
+		animation-fill-mode: backwards;   /*Last property means delay */
+	  }  
+
+
+		@media(max-width: 1050px){
+			.header-title{
+
+			font-size: 3.6rem;
+			}
+		}
+
+
+
+/*============================================================================ */
    /*Choose your tesla*/
+
+   #headingTitle .title{
+	color: #0048BA;
+}
+
    #ad{
 	   background-image: url(images/section4.jpg);
 	   font-size:100px; 
